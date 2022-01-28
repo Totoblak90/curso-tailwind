@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <title>Curso Tailwind Css</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body class="bg-body-pattern bg-scroll">
+    <!-- HEADER INIT  -->
+    <header id="header" class="bg-black text-white h-20 bebas xs:h-36 xxs:h-52">
+      <div class="box-position flex md:flex-row xs:flex-col">
+        <div id="logo" class="flex-1 xs:mx-auto">
+          <div
+            class="group w-64 mt-4 pt-0.5 pb-0.5 bg-azul-claro text-center tracking-wider cursor-pointer overflow-hidden transtion duration-300 rounded-md hover:text-black hover:bg-gray-200"
+          >
+            <span
+              class="symbol block float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-none group-hover:animate-from-below"
+              >S</span
+            >
+            <h3
+              class="block float-right text-4xl mt-1.5 mr-16 transition duration-100 group-hover:animate-from-right"
+            >
+              TAILWIND
+            </h3>
+          </div>
+        </div>
+
+        <nav class="flex-1">
+          <ul
+            class="flex flex-row h-20 items-center text-2xl text-center md:justify-end xxs:flex-col xxs:justify-start"
+          >
+            <li class="menu-item">
+              <a href="#" class="menu-item-a">INICIO</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-a">BLOG</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-a">FORMACIÓN</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-item-a">CONTACTO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- INFO SECTION INIT -->
+    <section class="box-position">
+      <!-- BANNER INIT -->
+      <div
+        id="banner"
+        class="h-28 w-full border-8 border-white mx-auto overflow-hidden shadow m-5 bg-banner-bg bg-banner-position animate-bg-banner"
+      >
+        <h1
+          class="block text-white text-4xl font-normal tracking-wider m-7 mx-auto text-center text-banner animate-text-banner xs:text-2xl xs:mt-8"
+        >
+          Cursos de desarrollo web con Victor Robles
+        </h1>
+      </div>
+      <!-- BANNER END -->
+      <!-- CARDS INIT -->
+      <div
+        id="cards"
+        class="lg:flex lg:flex-nowrap lg:justify-between md:grid md:grid-cols-3 md:gap-3 xs:grid-cols-2 xs:gap-1 xxs:grid-cols-1 xxs:gap-1"
+      >
+        <div class="card">
+          <span
+            class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:h-36 group-hover:animate-card-from-top"
+            >H</span
+          >
+          <h2
+            class="card-category group-hover:text-white group-hover:animate-card-from-top"
+          >
+            Desarrollo web
+          </h2>
+          <p
+            class="card-description group-hover:text-white group-hover:animate-card-from-left"
+          >
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <div class="card">
+          <span
+            class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:h-36 group-hover:animate-card-from-top"
+            >_</span
+          >
+          <h2
+            class="card-category group-hover:text-white group-hover:animate-card-from-top"
+          >
+            Sistemas operativos
+          </h2>
+          <p
+            class="card-description group-hover:text-white group-hover:animate-card-from-left"
+          >
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <div class="card">
+          <span
+            class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:h-36 group-hover:animate-card-from-top"
+            >S</span
+          >
+          <h2
+            class="card-category group-hover:text-white group-hover:animate-card-from-top"
+          >
+            Hardware
+          </h2>
+          <p
+            class="card-description group-hover:text-white group-hover:animate-card-from-left"
+          >
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <div class="card">
+          <span
+            class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:h-36 group-hover:animate-card-from-top"
+            >u</span
+          >
+          <h2
+            class="card-category group-hover:text-white group-hover:animate-card-from-top"
+          >
+            Redes e internet
+          </h2>
+          <p
+            class="card-description group-hover:text-white group-hover:animate-card-from-left"
+          >
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+
+        <div class="card">
+          <span
+            class="card-icon group-hover:text-7xl group-hover:text-azul-claro group-hover:h-36 group-hover:animate-card-from-top"
+            >a</span
+          >
+          <h2
+            class="card-category group-hover:text-white group-hover:animate-card-from-top"
+          >
+            Base de datos
+          </h2>
+          <p
+            class="card-description group-hover:text-white group-hover:animate-card-from-left"
+          >
+            Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </div>
+      <!-- CARDS END -->
+    </section>
+    <!-- INFO SECTION END -->
+
+    <!-- INIT MAIN CONTENT -->
+    <main class="box-position mt-5 flex flex-row-reverse xs:flex-col-reverse">
+      <!-- INICIO SIDEBAR -->
+      <aside id="lateral" class="flex-none w-72 min-h-full xs:w-full xs:m-0">
+        <h3 class="aside-header">Buscar</h3>
+        <div
+          id="search"
+          class="w-11/12 h-7 m-2.5 mx-auto bg-white border-gray-200 rounded shadow-inner"
+        >
+          <form>
+            <input
+              type="text"
+              class="w-10/12 h-6 border-none outline-none pl-1.5 rounded-md bg-white text-gray-500 transition duration-300 focus:outline-none"
+            />
+            <input
+              type="button"
+              value="L"
+              class="symbol h-6 cursor-pointer text-base bg-transparent border-none text-gray-500 pl-2"
+            />
+          </form>
+        </div>
+        <h3 class="aside-header">Login</h3>
+        <div class="aside-boxes" id="login">
+          <form>
+            <label class="login-icons" for="email">U</label>
+            <input type="email" id="email" class="login-input" />
+
+            <label class="login-icons text-xl ml-7 mt-6" for="password"
+              >w</label
+            >
+            <input class="login-input" type="password" id="password" />
+
+            <input type="submit" value="Iniciar sesión" class="login-button" />
+            <input
+              type="reset"
+              value="Reiniciar"
+              class="login-button ml-1 bg-gradient-to-b from-red-900 to-red-400"
+            />
+
+            <a href="#" class="login-link">Registrate aquí</a>
+            <a href="#" class="login-link">¿Has olvidado tu contraseña?</a>
+          </form>
+        </div>
+        <h3 class="aside-header">Redes sociales</h3>
+        <div id="social-media" class="aside-boxes h-48">
+          <div class="group twitter">
+            <a href="#" class="social-items-logo">t</a>
+            <p class="social-items-link">Twitter</p>
+          </div>
+          <div class="group facebook">
+            <a href="#" class="social-items-logo">f</a>
+            <p class="social-items-link">Facebook</p>
+          </div>
+          <div class="group youtube">
+            <a href="#" class="social-items-logo">y</a>
+            <p class="social-items-link">Youtube</p>
+          </div>
+        </div>
+        <h3 class="aside-header">Patrocinadores</h3>
+        <div id="sponsors" class="aside-boxes"></div>
+      </aside>
+      <!-- FIN SIDEBAR -->
+      <!-- INIT ARTICLES -->
+      <section id="main-section" class="flex-grow mr-10 xs:m-0 xs:w-full">
+        <h2 class="article-header bg-main-titles">Últimos artículos</h2>
+        <article class="article">
+          <div class="article-spans-container">
+            <span class="article-spans">Fecha: 10/03</span>
+            <span class="article-spans">Categoría: Pruebas</span>
+          </div>
+          <h4 class="article-subtitle">
+            <a class="font-semibold text-azul-oscuro hover:underline" href="#"
+              >Título del artículo</a
+            >
+          </h4>
+          <p class="article-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            praesentium sed consectetur fugiat mollitia reiciendis, eligendi
+            ratione amet explicabo doloribus cumque dignissimos! Inventore
+            neque, eos laboriosam facere a ab quis praesentium quos!
+          </p>
+        </article>
+
+        <article class="article">
+          <div class="article-spans-container">
+            <span class="article-spans">Fecha: 10/03</span>
+            <span class="article-spans">Categoría: Pruebas</span>
+          </div>
+          <h4 class="article-subtitle">
+            <a class="font-semibold text-azul-oscuro hover:underline" href="#"
+              >Título del artículo</a
+            >
+          </h4>
+          <p class="article-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            praesentium sed consectetur fugiat mollitia reiciendis, eligendi
+            ratione amet explicabo doloribus cumque dignissimos! Inventore
+            neque, eos laboriosam facere a ab quis praesentium quos!
+          </p>
+        </article>
+
+        <article class="article">
+          <div class="article-spans-container">
+            <span class="article-spans">Fecha: 10/03</span>
+            <span class="article-spans">Categoría: Pruebas</span>
+          </div>
+          <h4 class="article-subtitle">
+            <a class="font-semibold text-azul-oscuro hover:underline" href="#"
+              >Título del artículo</a
+            >
+          </h4>
+          <p class="article-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            praesentium sed consectetur fugiat mollitia reiciendis, eligendi
+            ratione amet explicabo doloribus cumque dignissimos! Inventore
+            neque, eos laboriosam facere a ab quis praesentium quos!
+          </p>
+        </article>
+
+        <article class="article">
+          <div class="article-spans-container">
+            <span class="article-spans">Fecha: 10/03</span>
+            <span class="article-spans">Categoría: Pruebas</span>
+          </div>
+          <h4 class="article-subtitle">
+            <a class="font-semibold text-azul-oscuro hover:underline" href="#"
+              >Título del artículo</a
+            >
+          </h4>
+          <p class="article-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            praesentium sed consectetur fugiat mollitia reiciendis, eligendi
+            ratione amet explicabo doloribus cumque dignissimos! Inventore
+            neque, eos laboriosam facere a ab quis praesentium quos!
+          </p>
+        </article>
+
+        <article class="article">
+          <div class="article-spans-container">
+            <span class="article-spans">Fecha: 10/03</span>
+            <span class="article-spans">Categoría: Pruebas</span>
+          </div>
+          <h4 class="article-subtitle">
+            <a class="font-semibold text-azul-oscuro hover:underline" href="#"
+              >Título del artículo</a
+            >
+          </h4>
+          <p class="article-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+            praesentium sed consectetur fugiat mollitia reiciendis, eligendi
+            ratione amet explicabo doloribus cumque dignissimos! Inventore
+            neque, eos laboriosam facere a ab quis praesentium quos!
+          </p>
+        </article>
+      </section>
+      <!-- END ARTICLES -->
+    </main>
+    <!-- END MAIN CONTENT -->
+    <!-- INIT FOOTER -->
+    <footer
+      id="footer"
+      class="w-full h-auto bg-black text-white overflow-hidden"
+    >
+      <div class="box-position flex flex-row xs:flex-col">
+        <div id="menu-footer" class="footer-box">
+          <h5 class="footer-title">MENÚ</h5>
+          <ul class="footer-menu">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">FORMACIÓN</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </div>
+        <div id="location" class="footer-box">
+          <h5 class="footer-title">¿DÓNDE ESTAMOS?</h5>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1382.4967699084905!2d-58.57119600028456!3d-34.49908155506273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbb6726c997fb%3A0xc4ac7abc271bebb2!2sBatalla%20Pago%20Largo%201600%2C%20B1609GPB%20Boulogne%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1643329345806!5m2!1ses-419!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="w-full h-80 mt-3 border-4 border-gray-400 rounded-md shadow-md"
+          ></iframe>
+        </div>
+        <div id="info" class="footer-box">
+          <h5 class="footer-title">Desarrollado con</h5>
+          <p class="mb-5 text-center">
+            <img
+              class="bloc mx-auto"
+              src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
+              alt="html5"
+            />
+          </p>
+          <h5 class="footer-title">Optimizado para</h5>
+          <div class="flex flex-row space-x-5 mb-5 browsers">
+            <a href="#">
+              <img src="img/firefox-icon.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/chrome.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/Opera_256x256.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/safari.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/ios.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/android.png" alt="" />
+            </a>
+          </div>
+          <h5 class="footer-title">Autor</h5>
+          <p>Tobias Blaksley</p>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>
